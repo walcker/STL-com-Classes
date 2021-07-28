@@ -3,24 +3,19 @@
 #include <vector>
 #include "classe.h"
 
-using namespace std;
-
-string Classe::getNome(){
-	return nome;
-	}
-  
-void Classe::setNome(string n) {
-	nome = n;
-	} 
-
-string Classe::getVetor(){
-for(int i = 0; i < 2; i++){ 
-	return vetor[i];
-	}
+int Classe::area() {
+    return largura * altura;
 }
-   
-void Classe::setVetor(string v) {
-for(int i = 0; i < 2; i++){
-	vetor[i] = v;
-	}
+
+int Classe::perimetro() {
+    return (2 * largura + 2 * altura);
 }
+
+int Classe::Vetor(){
+  for(int i = 0; i < 5; i++){
+  return (vetor[i]*2);
+ }
+ return 0;
+}
+
+
